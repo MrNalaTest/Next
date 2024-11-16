@@ -68,6 +68,17 @@ body {
   }
 }
 
+.unicbg2 {
+  opacity: 1;
+  position: absolute;
+  inset: 0px;
+  background-size: cover;
+  background-position: center center;
+  z-index: -2000;
+  background-image: url('./img/bogota-desktop.jpg');
+  height: 680px;
+}
+
 .unicbg {
   opacity: 1;
   position: absolute;
@@ -95,11 +106,138 @@ body {
   transform: scale(1.1);
 }
 
+/* timeline */
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline-section {
+  position: relative;
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.line {
+  position: absolute;
+  top: 1rem; /* Adjust top position as needed */
+  bottom: 0;
+  left: calc(var(--timeline-title-width) + var(--timeline-column-gap) / 2);
+  border-left: 0.125rem dashed var(--opacity-light); /* Dashed line style */
+}
+
+.titleline {
+  position: relative;
+  z-index: 1;
+}
+
+.containerline {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.content.animated {
+  transition: all 0.3s ease-in-out; /* Smooth transition for animations */
+}
+
+.date {
+  font-size: 1.5rem; /* Larger font for date */
+  font-weight: bold;
+}
+
+.weekday {
+  font-size: 1rem; /* Smaller font for weekday */
+  color: var(--text-secondary-color);
+}
+
+.dot-outer-wrapper {
+  position: absolute;
+  left: calc(50% - 10px); /* Center the dot */
+}
+
+.dot-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.flex-1 {
+  flex-grow: 1; /* Allow flex item to grow */
+}
+
+.card-wrapper {
+  margin-top: 20px; /* Space above cards */
+}
+
+.content-card {
+  background-color: var(--card-background);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--card-padding);
+  display: flex;
+  cursor: pointer; /* Indicate clickable card */
+}
+
+.content-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.event-link {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+}
+
+.event-content {
+ display:flex; 
+ flex-direction: column; 
+ justify-content:flex-start; 
+ width:auto; 
+ padding-left:.5rem
+}
+
+.info-and-cover {
+ display:flex; 
+ align-items:center
+}
+
+.cover-image img {
+ border-radius:.5rem
+}
+
+.event-time {
+ display:flex; 
+ align-items:center
+}
+
+
+.attribute {
+ display:flex; 
+ align-items:center
+}
 
 
 @media (max-width: 650px) {
   .unicbg {
     background-image: url('./img/Bogotabg.png');
+    background-position: center top;
+  }
+  .unicbg2 {
+    background-image: url('./img/bogota-mobile.jpg');
     background-position: center top;
   }
 }

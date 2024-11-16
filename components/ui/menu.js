@@ -17,37 +17,37 @@ import {
 
 const components = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Contact us",
+    href: "/Contact us",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Services",
+    href: "/Services",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Queries",
+    href: "/Queries",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
+    title: "Social Responsibility",
+    href: "/Social-Responsibility",
     description: "Visually or semantically separates content.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "Activism",
+    href: "/Activism",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
+    title: "Developer docs",
+    href: "/Developer-docs",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
@@ -69,30 +69,29 @@ export function NavigationMenuDemo() {
                   >
                     <Icons.home className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Your eCommerce!! 🤞
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                      We help you with Beautifully designed components that makes leverge your eCommerce business.
+                      We use open source matterial but a really good one.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/introduction" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+                Your second page section where you can add whaterever you want.
               </ListItem>
               <ListItem href="/progress" title="Installation">
-                How to install dependencies and structure your app.
+                Third page section where you can add whaterever you want.
               </ListItem>
               <ListItem href="/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+                Four page section where you can add whaterever you want.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -110,7 +109,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/progress" passHref legacyBehavior>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              More stuff
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

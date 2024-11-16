@@ -9,7 +9,7 @@ import { Drawer, DrawerContent, DrawerTrigger, } from "@/components/ui/drawer";
 import { Popover, PopoverContent, PopoverTrigger, } from "@/components/ui/popover";
 
 const statusis = [
-  { value: "Shadcn ui", label: "Offerts" },
+  { value: "Contact us", label: "Contact us" },
   { value: "Introduction", label: "Introduction" },
   { value: "Installation", label: "Installation" },
   { value: "Typography", label: "Typography" },

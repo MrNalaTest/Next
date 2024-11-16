@@ -10,7 +10,7 @@ export const Filters = ({onFilterChange}) => {
 
   const handleFilterChange = (tag) => {
     setSelectedTag(tag);
-    onFilterChange(tag); // Envía el cambio hacia pages.js
+    onFilterChange(tag); // sents chnges to pages.js
   };
 
   const handleClearFilter = () => {

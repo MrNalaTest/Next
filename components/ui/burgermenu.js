@@ -42,7 +42,7 @@ export function BurgerMenu() {
         }`}
       >
         <ul className="$ backdrop-blur-md bg-black/85 rounded-md">
-          <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-zinc-800">Shadcn ui</li>
+          <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-zinc-800">Contact us</li>
           <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-zinc-800">Introduction</li>
           <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-zinc-800">Installation</li>
           <li className="p-4 border-b border-gray-700 cursor-pointer hover:bg-zinc-800">Typography</li>

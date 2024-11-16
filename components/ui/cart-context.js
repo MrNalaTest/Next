@@ -180,7 +180,7 @@ export const CartProvider = ({ children }) => {
 
 
 "use client";
-import { createContext, useContext, useEffect, useReducer } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 
 // Crea el contexto
 const CartContext = createContext();

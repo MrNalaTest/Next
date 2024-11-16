@@ -6,12 +6,14 @@ import { Button } from '@/components/ui/button';
 import { ModeToggle } from '@/components/ui/button-theme';
 import { NavigationMenuDemo } from '@/components/ui/menu';
 import { ShoppingCart } from 'lucide-react';
+import { useCart } from './cart-context';
 import { DrawerCart, DrawerTriggerCart, DrawerContentCart } from "@/components/ui/drawercart";
 import Cart from "@/components/ui/cart";
 
 
 export const Navbar = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { cart } = useCart();
 
   return (
     <div> 
@@ -37,6 +39,11 @@ export const Navbar = () => {
                     onClick={() => setIsCartOpen(true)}
                   >
                     <ShoppingCart />
+                    {cart.totalQuantity > 0 && (
+                      <div class="absolute right-3 top-2 -mr-0 -mt-1 h-5 w-5 rounded bg-cyan-500 text-[11px] font-medium text-white">
+                        {cart.totalQuantity}
+                      </div>
+                    )}
                   </Button>
                 </DrawerTriggerCart>
                 <DrawerContentCart >

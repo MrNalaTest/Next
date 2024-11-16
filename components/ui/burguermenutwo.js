@@ -20,16 +20,16 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const statusis = [
-  { value: "Shadcn ui", label: "Shadcn ui", Link: "/first" },
+  { value: "Your eCommerce", label: "ecommerce", Link: "/first" },
   { value: "Introduction", label: "Introduction", Link: "/introduction"},
   { value: "Installation", label: "Installation", Link: "/installation" },
   { value: "Typography", label: "Typography", Link: "/typography" },
-  { value: "Alert Dialog", label: "Alert Dialog", Link: "/alert-dialog" },
-  { value: "Progress", label: "Progress", Link: "/progress" },
-  { value: "Scroll area", label: "Scroll area", Link: "/scroll-area" },
-  { value: "Tabs", label: "Tabs", Link: "/tabs" },
-  { value: "Tooltip", label: "Tooltip", Link: "/tooltip" },
-  { value: "Contact", label: "Contact", Link: "/contact" },
+  { value: "About us", label: "Contact", Link: "/About-us" },
+  { value: "Services", label: "Progress", Link: "/Services" },
+  { value: "Queries", label: "Scroll area", Link: "/Queries" },
+  { value: "Social Responsibility", label: "Tabs", Link: "/Social-Responsibility" },
+  { value: "Activism", label: "Tooltip", Link: "/Activism" },
+  { value: "Contact us", label: "Alert Dialog", Link: "/Contact-us" },
 ];
 
 export function ComboBoxResponsives() {
