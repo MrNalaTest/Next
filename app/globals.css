@@ -224,10 +224,23 @@ body {
  align-items:center
 }
 
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .attribute {
  display:flex; 
  align-items:center
+}
+
+.content-animated {
+  border-color: var(--opacity-light);
+  background-color: var(--bg-opacity-64);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  backdrop-filter: var(--backdrop-blur);
+  box-shadow: var(--shadow-sm);
 }
 
 

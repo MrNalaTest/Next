@@ -133,7 +133,7 @@ const Timeline = () => {
                         <div key={index} className="relative pl-12 md:pl-16">
                             <div className="flex items-center gap-4 text-gray-400 mb-4">
                                 <div className="absolute left-3 md:left-5 w-3 h-3 rounded-full bg-gray-400" />
-                                <div>
+                                <div className='content-animated'>
                                     <span className="font-medium">{event.date}</span>
                                     <span className="ml-2">{event.weekday}</span>
                                 </div>

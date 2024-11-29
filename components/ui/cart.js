@@ -1,41 +1,3 @@
-/* "use client";
-import React from 'react'
-
-const Cart = () => {
-  return (
-    <div className="max-w-md mx-auto bg-transparent backdrop-blur-md rounded-l-xl shadow-md h-auto w-auto m-2">
-        cart is empthy!! | please add some items
-    </div>
-  )
-}
-
-export default Cart;
-
-
-<div className="m-3 ml-auto flex h-9 flex-row items-center rounded-full border border-neutral-200 dark:border-neutral-700">
-                  <form action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')">
-                    <button type="submit" aria-label="Reduce item quantity" class="ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full p-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" className="h-4 w-4 dark:text-neutral-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14"></path>
-                      </svg>
-                    </button>
-                    <p aria-live="polite" class="sr-only" role="status"></p>
-                  </form>
-                  <p class="w-6 text-center">
-                    <span class="w-full text-sm">${}</span>
-                  </p>
-                  <form action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')">
-                    <button type="submit" aria-label="Increase item quantity" className="ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full p-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 dark:text-neutral-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-                      </svg></button>
-                      <p aria-live="polite" class="sr-only" role="status"></p>
-                  </form>
-                </div>
-
- */
-
-
 'use client';
 
 import Image from 'next/image';
@@ -48,7 +10,7 @@ export default function Cart() {
   return (
     <div className="fixed bottom-0 right-0 top-0 flex h-full w-full flex-col bg-transparent p-6 text-black dark:text-white md:w-[390px] rounded-l-3xl">
       <div className="flex items-center justify-between">
-        <p className="text-lg font-semibold">My Cart</p>
+        <p className="text-lg font-semibold">Cart</p>
       </div>
 
       {!cart.items.length ? (

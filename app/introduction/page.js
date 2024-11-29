@@ -17,7 +17,7 @@ const page = () => {
             <p>Any changing on our events will be notified do not worry!!</p>
           </div>
         </div>
-      <div className='ml-10'>
+      <div className='m-10'>
       <p>All the events we are goint to host will take place in Bogota but we are gonna schedule over the next year in multiple locations in Colombia as well as overseas so stay tunned!!</p>
       </div>
       <div>
