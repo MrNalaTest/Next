@@ -68,7 +68,7 @@ const Page = () => {
           🥯 Find more about our products tracking all news from our blog,
           All the events we are going to host will take place in Bogotá, but we
           are gonna schedule over the next year in multiple locations in
-          Colombia as well as overseas, so stay tuned!!
+          Colombia as well as overseas, so stay tuned!
         </h2>
       </div>
       <div className="m-5">
