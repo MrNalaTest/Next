@@ -65,7 +65,7 @@ const Page = () => {
       </div>
       <div className="m-10">
         <h2 className="mountains-of-christmas-regular">
-          Find more about our products tracking all news from our blog,
+          🥯 Find more about our products tracking all news from our blog,
           All the events we are going to host will take place in Bogotá, but we
           are gonna schedule over the next year in multiple locations in
           Colombia as well as overseas, so stay tuned!!
