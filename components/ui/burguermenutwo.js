@@ -20,9 +20,9 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 const statusis = [
-  { value: "Your eCommerce", label: "ecommerce", Link: "/first" },
+  { value: "Your eCommerce", label: "ecommerce", Link: "/" },
   { value: "Introduction", label: "Introduction", Link: "/introduction"},
-  { value: "Installation", label: "Installation", Link: "/installation" },
+  { value: "Installation", label: "Installation", Link: "/progress" },
   { value: "Typography", label: "Typography", Link: "/typography" },
   { value: "About us", label: "Contact", Link: "/About-us" },
   { value: "Services", label: "Progress", Link: "/Services" },
