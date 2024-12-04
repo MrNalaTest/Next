@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useContext, useEffect, useReducer } from 'react';
 
 // Crea el contexto
 const CartContext = createContext();
@@ -121,6 +121,12 @@ const cartReducer = (state, action) => {
       };
     }
 
+    case 'LOAD_CART':
+      return {
+        ...state,
+        ...action.payload, // Carga los datos del carrito desde LocalStorage
+      };
+
     default:
       return state;
   }
@@ -129,6 +135,28 @@ const cartReducer = (state, action) => {
 // Proveedor del contexto del carrito
 export const CartProvider = ({ children }) => {
   const [cart, dispatch] = useReducer(cartReducer, initialState);
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      try {
+        const parsedCart = JSON.parse(storedCart);
+        if (parsedCart && parsedCart.items) {
+          dispatch({ type: 'LOAD_CART', payload: parsedCart });
+        }
+      } catch (error) {
+        console.error("Error parsing cart data from localStorage:", error);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (cart.items.length > 0) {
+      const { items, totalQuantity, totalPrice } = cart;
+      const cartToStore = { items, totalQuantity, totalPrice };
+      localStorage.setItem('cart', JSON.stringify(cartToStore));
+    }
+  }, [cart.items, cart.totalQuantity, cart.totalPrice]);
 
   const addToCart = (product) => {
     // Asegúrate de que el precio se pase como número

@@ -12,7 +12,7 @@ const page = () => {
         <div className='flex items-center justify-items-start min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
           <div className=''>
             <h1 className='font-bold text-2xl italic'>eCommerce events we are gonna host soon!!</h1>
-            <h2>Stay tuned to the next events!!</h2>
+            <h2>Stay tuned to the next events that will take place soon!!</h2>
             <h3>Bear in mind all activities could switch of schedule unexpectedly!!</h3>
             <p>Any changing on our events will be notified do not worry!!</p>
           </div>
