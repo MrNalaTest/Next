@@ -75,22 +75,22 @@ function HamburgerMenu({ isOpen, toggleMenu }) {
     <button
       onClick={toggleMenu}
       className={`fixed top-0 left-1 w-12 h-12 rounded-full flex flex-col justify-center items-center transition-all duration-300 bg-transparent md:hidden ${
-        isOpen ? "bg-black" : ""
+        isOpen ? "bg-transparent" : ""
       }`}
       aria-label="Open Menu Button"
     >
       <span
-        className={`block w-8 h-[3px] bg-white rounded transition-transform duration-300 ${
+        className={`block w-8 h-[3px] bg-black dark:bg-white rounded transition-transform duration-300 ${
           isOpen ? "rotate-45 translate-y-[7px]" : ""
         }`}
       ></span>
       <span
-        className={`block w-8 h-[3px] bg-white rounded mt-1 transition-opacity duration-300 ${
+        className={`block w-8 h-[3px] bg-black dark:bg-white rounded mt-1 transition-opacity duration-300 ${
           isOpen ? "opacity-0" : ""
         }`}
       ></span>
       <span
-        className={`block w-8 h-[3px] bg-white rounded mt-1 transition-transform duration-300 ${
+        className={`block w-8 h-[3px] bg-black dark:bg-white rounded mt-1 transition-transform duration-300 ${
           isOpen ? "-rotate-45 -translate-y-[7px]" : ""
         }`}
       ></span>
