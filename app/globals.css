@@ -243,6 +243,108 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+/* slide copy */
+
+.aesthetic-slider {
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.slide-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  opacity: 0;
+  transform: scale(1.1) rotate(1deg);
+  filter: blur(10px) brightness(80%);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  filter: blur(0) brightness(100%);
+}
+
+.slide.inactive {
+  opacity: 0;
+}
+
+.controls {  
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.control-button {
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin: 15px;
+}
+
+.control-button:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+.progress-indicator {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.active-indicator {
+  background: #fff;
+}
+
+
+/*  */
+
 
 @media (max-width: 650px) {
   .unicbg {

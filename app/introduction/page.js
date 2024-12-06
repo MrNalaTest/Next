@@ -3,6 +3,7 @@ import React from 'react'
 import { Navbar } from '@/components/ui/navbar'; 
 import '../globals.css'
 import Timeline from '@/components/ui/Timeline'
+import { Footer } from "@/components/ui/Footer"
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
       <div>
         <Timeline />
       </div>
+      <Footer />
     </div>
   )
 }

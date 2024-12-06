@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/ui/navbar";
+import { Footer } from "@/components/ui/Footer";
 import "../globals.css";
 import Image from "next/image";
 
@@ -127,6 +128,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
