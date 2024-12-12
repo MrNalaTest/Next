@@ -35,7 +35,7 @@ const DrawerContentCart = React.forwardRef(({ className, children, ...props }, r
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed right-0 top-0 z-50 h-full w-full sm:w-[400px] flex flex-col border bg-background rounded-l-3xl slideFromRight",
+        "fixed right-0 top-0 z-50 h-full w-full sm:w-[400px] flex flex-col border bg-background rounded-l-3xl slideFromRight minicart",
         className
       )}
       {...props}>

@@ -379,6 +379,13 @@ body {
   }
 }
 
+
+@media (max-width: 406px) {
+  .minicart {
+    width: 320px;
+  }
+}
+
 /* Drawer que se desliza desde la derecha */
 @keyframes slideInFromRight {
   from {
