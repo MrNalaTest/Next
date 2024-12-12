@@ -355,6 +355,13 @@ body {
     background-image: url('./img/bogota-mobile.jpg');
     background-position: center top;
   }
+  .logoinitial {
+    display: block;
+    justify-items: center;
+  }
+  .initial {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 576px) {
