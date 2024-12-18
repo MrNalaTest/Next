@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/Footer"
 import "./globals.css";
+import { Motionline } from "@/components/ui/Motionline";
 import logowitty from "../app/img/logowitty.jpeg"
 
 
@@ -72,8 +73,13 @@ export default function Home() {
           </div> */}
         </div>
       </main>
+      <div className="pb-80">
+      <Motionline />
+      </div>
     </div>
+    <div>
       <Footer />
+    </div>
     </div>
   );
 }

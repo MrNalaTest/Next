@@ -123,12 +123,12 @@ const Timeline = () => {
 
     return (
         <div className="min-h-screen bg-transparent text-white p-4 md:p-6 lg:p-8">
-            <div className="relative max-w-3xl mx-auto">
+            <div className="relative max-w-3xl mx-auto ">
                 {/* Línea vertical */}
                 <div className="absolute left-4 md:left-6 top-2 bottom-2 w-0.5 bg-gray-700" />
 
                 {/* Contenido dinámico */}
-                <div className="space-y-8 md:space-y-12">
+                <div className="space-y-8 md:space-y-12 ">
                     {events.map((event, index) => (
                         <div key={index} className="relative pl-12 md:pl-16">
                             <div className="flex items-center gap-4 text-gray-400 mb-4">

@@ -236,11 +236,28 @@ body {
 }
 
 .content-animated {
-  border-color: var(--opacity-light);
-  background-color: var(--bg-opacity-64);
-  -webkit-backdrop-filter: var(--backdrop-blur);
-  backdrop-filter: var(--backdrop-blur);
-  box-shadow: var(--shadow-sm);
+  border-color: rgb(255 255 255 / 8%);
+  background-color: rgba(19,21,23,0.64);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+  box-shadow: 0 0.7px 2.7px rgba(0,0,0,.1) ,0 1.7px 6.9px rgba(0,0,0,.13), 0 3.5px 14.2px rgba(0,0,0,.17), 0 7.3px 29.2px rgba(0,0,0,.22);
+  border-radius: 22px;
+  display: inline-flex;
+  align-items: center; 
+  padding: 5px 12px; 
+  border-radius: 20px; 
+  font-weight: 600;
+  font-size: 14px;
+  gap: 8px;
+  line-height: 1;
+}
+
+.content-animated::before{
+  display: block;
+  width: 8px; /* Tamaño del círculo */
+  height: 8px;
+  background-color: rgb(255 255 255 / 8%);
+  border-radius: 50%; /* Hace el punto redondo */
 }
 
 /* slide copy */
