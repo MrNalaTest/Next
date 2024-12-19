@@ -123,8 +123,8 @@ body {
   position: absolute;
   top: 1rem; /* Adjust top position as needed */
   bottom: 0;
-  left: calc(var(--timeline-title-width) + var(--timeline-column-gap) / 2);
-  border-left: 0.125rem dashed var(--opacity-light); /* Dashed line style */
+  left: calc(1rem + 0.5rem / 2);
+  border-left: 0.125rem dashed rgba(255,255,255,0.08);
 }
 
 .titleline {
@@ -250,6 +250,11 @@ body {
   font-size: 14px;
   gap: 8px;
   line-height: 1;
+  position: sticky;
+  /* right: 320px; */
+  top: 60px;
+  height: 30px;
+  width: 190px;
 }
 
 .content-animated::before{
@@ -399,7 +404,7 @@ body {
 
 @media (max-width: 406px) {
   .minicart {
-    width: 320px;
+    width: 325px;
   }
 }
 

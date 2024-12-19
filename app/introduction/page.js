@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import { Navbar } from '@/components/ui/navbar'; 
 import '../globals.css'
@@ -6,6 +6,7 @@ import Timeline from '@/components/ui/Timeline'
 import { Footer } from "@/components/ui/Footer"
 
 const page = () => {
+  
   return (
     <div className=''>
       <Navbar />

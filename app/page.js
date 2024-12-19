@@ -65,7 +65,7 @@ export default function Home() {
           </a>
         </div>
         <div className="mt-24">
-          <div className="flex justify-start items-center">
+          <div className="flex justify-start items-center mt-16">
             <Filters onFilterChange={setSelectedTag}/>
           </div>
          {/*  <div>

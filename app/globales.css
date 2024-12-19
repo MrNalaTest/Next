@@ -80,9 +80,7 @@
     --font-sans: "__Inter_aaf875","__Inter_Fallback_aaf875"
 }
 
-/*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
-*/
+
 *,:after,:before {
     box-sizing: border-box;
     border: 0 solid #e5e7eb

@@ -2,7 +2,7 @@
 import "../../app/globals.css"
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
-
+import "@/app/globals.css"
 import { cn } from "@/lib/utils"
 
 
@@ -35,7 +35,7 @@ const DrawerContentCart = React.forwardRef(({ className, children, ...props }, r
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        "fixed right-0 top-0 z-50 h-full w-full sm:w-[400px] flex flex-col border bg-background rounded-l-3xl slideFromRight minicart",
+        "fixed right-0 top-0 z-50 h-full w-398 sm:w-[398px] flex flex-col border bg-background rounded-l-3xl slideFromRight minicart",
         className
       )}
       {...props}>
