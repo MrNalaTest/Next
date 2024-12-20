@@ -304,7 +304,7 @@ const Timeline = () => {
     <div className="min-h-screen bg-transparent text-white p-4 md:p-6 lg:p-8">
       <div className="relative max-w-3xl mx-auto">
         {/* Línea vertical */}
-        <div className="line" />
+        <div className="line bg-black" />
 
         {/* Contenido dinámico */}
         <div className="space-y-8 md:space-y-10">
@@ -317,13 +317,15 @@ const Timeline = () => {
                 }`}
                 style={{ zIndex: index === activeIndex ? 10 : "auto" }}
               >
-                <div className="absolute left-4 md:left-4 w-3 h-3 rounded-full bg-gray-400" />
-                <span className="pl-5 font-medium">{event.date}</span>
-                <span className="ml-2">{event.weekday}</span>
+                <div className="fixed left-3 md:left-4 w-3 h-3 rounded-full bg-gray-400" />
+                  <div className="m-3">
+                    <span className="pl-5 font-medium">{event.date}</span>
+                    <span className="ml-2">{event.weekday}</span>
+                  </div>
               </div>
 
               {/* Contenido del evento */}
-              <div className="bg-zinc-900 border-zinc-800 rounded-lg hover:bg-zinc-800 hover:cursor-pointer">
+              <div className="bg-zinc-900 border-zinc-800 rounded-lg hover:bg-zinc-800 hover:cursor-pointer ml-8">
                 <div className="p-4 flex flex-col md:flex-row justify-between items-start gap-4">
                   <div className="space-y-4">
                     <div>

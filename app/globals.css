@@ -123,9 +123,10 @@ body {
   position: absolute;
   top: 1rem; /* Adjust top position as needed */
   bottom: 0;
-  left: calc(1rem + 0.5rem / 2);
+  left: calc(2rem + 4.5rem / 2);
   border-left: 0.125rem dashed rgba(255,255,255,0.08);
 }
+
 
 .titleline {
   position: relative;
@@ -254,7 +255,7 @@ body {
   /* right: 320px; */
   top: 60px;
   height: 30px;
-  width: 190px;
+  width: 200px;
 }
 
 .content-animated::before{
@@ -264,6 +265,7 @@ body {
   background-color: rgb(255 255 255 / 8%);
   border-radius: 50%; /* Hace el punto redondo */
 }
+
 
 /* slide copy */
 
@@ -406,6 +408,18 @@ body {
   .minicart {
     width: 325px;
   }
+}
+
+@media (min-width: 765px) {
+  
+.line {
+  position: absolute;
+  top: 1rem; /* Adjust top position as needed */
+  bottom: 0;
+  left: calc(2rem + 6.5rem / 2);
+  border-left: 0.125rem dashed rgba(255,255,255,0.08);
+}
+
 }
 
 /* Drawer que se desliza desde la derecha */
